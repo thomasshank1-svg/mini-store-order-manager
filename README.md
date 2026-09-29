@@ -1,5 +1,7 @@
 # Form & Function
 
+![Project screenshot](docs/screenshot.png)
+
 Form & Function is a mini ecommerce and order-management demo. It has a digital product catalog, browser cart, simulated checkout, stock reduction, and order status updates.
 
 ## Run
