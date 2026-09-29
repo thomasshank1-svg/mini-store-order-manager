@@ -1,0 +1,57 @@
+:root{--accent:#b45309}
+
+.topbar div {
+  display: grid;
+}
+
+.topbar span {
+  color: #61708a;
+  font-size: .9rem;
+}
+
+.shell {
+  max-width: 1248px;
+  margin: auto;
+  padding: 35px 24px 64px;
+}
+
+.hero {
+  margin-bottom: 28px;
+  max-width: 760px;
+}
+
+.panel-title,
+.actions,
+.compact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.cards {
+  display: grid;
+  gap: 12px;
+}
+
+.product {
+  display: grid;
+  gap: 14px;
+}
+
+.compact {
+  padding: 12px;
+}
+
+@media(max-width:760px) {
+  .shell {
+    padding: 24px 16px;
+  }
+
+  .panel-title,
+  .actions,
+  .compact {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

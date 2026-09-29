@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form & Function</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
+  <script defer src="common.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <strong>Form & Function</strong>
+      <span>Mini store and order manager</span>
+    </div>
+    <a href="/">Local demo</a>
+  </header>
+  <main class="shell">
+    <section class="hero">
+      <p class="badge">Ecommerce development</p>
+      <h1>Sell a small digital catalog and manage every order.</h1>
+      <p>Checkout is simulated. The backend calculates totals, validates stock, and stores orders in SQLite.</p>
+    </section>
+    <section class="grid">
+      <div class="panel">
+        <div class="panel-title">
+          <h2>Catalog</h2>
+          <span id="cartCount">0 items</span>
+        </div>
+        <div id="products" class="cards"></div>
+      </div>
+      <aside class="panel">
+        <h2>Cart</h2>
+        <div id="cart" class="stack"></div>
+        <form id="checkout" class="stack">
+          <label>Customer name <input name="customer" autocomplete="name" required></label>
+          <label>Email <input name="email" type="email" autocomplete="email" required></label>
+          <button>Place test order</button>
+        </form>
+      </aside>
+    </section>
+    <section class="panel">
+      <div class="panel-title">
+        <h2>Order manager</h2>
+        <span id="orderTotal">0 orders</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>ID</th><th>Customer</th><th>Total</th><th>Items</th><th>Status</th></tr></thead>
+          <tbody id="orders"></tbody>
+        </table>
+      </div>
+    </section>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+  </main>
+</body>
+</html>
